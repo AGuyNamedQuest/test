@@ -14,7 +14,7 @@
 
 import CloudImage from './assets/images2/cloud.png';
 import { styled } from '@mui/material/styles';
-
+import useVerticalNegativeSpaceNotGoodTh from './useVerticalNegativeSpaceNotGoodTh';
  
 const TypeQuest: any = styled("div")({  
   backgroundColor: `rgba(211, 234, 255, 1)`,  
@@ -146,6 +146,7 @@ const Cloud: any = styled("img")({
 });
  
 function VerticalNegativeSpaceNotGoodTh(): JSX.Element {
+  const {data} = useVerticalNegativeSpaceNotGoodTh();
   return (
     <TypeQuest >
        <LeftSide >
@@ -161,9 +162,11 @@ function VerticalNegativeSpaceNotGoodTh(): JSX.Element {
            <Temp1 >
              {`17°`}
                </Temp1>
-           <TempType >
-             {`F`}
-               </TempType>
+           {(data.isVisible) &&
+               <TempType >
+               {`F`}
+                 </TempType>
+           }
          </Temp>
        </LeftSide>
        <IconPlaceholder >
