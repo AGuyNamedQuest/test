@@ -12,9 +12,11 @@
 *
 **********************************************************************/
 
+import { Tooltip } from '@mui/material';
 import CloudImage from './assets/images2/cloud.png';
 import { styled } from '@mui/material/styles';
-
+import { VerticalNegativeSpaceOkProps } from './types';
+import useVerticalNegativeSpaceOk from './useVerticalNegativeSpaceOk';
  
 const TypeQuest: any = styled("div")({  
   backgroundColor: `rgba(211, 234, 255, 1)`,  
@@ -125,6 +127,7 @@ const TempType: any = styled("div")({
   lineHeight: `90px`,  
   textTransform: `none`,  
   margin: `0px 0px 0px 10px`,  
+  cursor: `pointer`,  
 });
   
 const IconPlaceholder: any = styled("div")({  
@@ -145,7 +148,8 @@ const Cloud: any = styled("img")({
   margin: `0px`,  
 });
  
-function VerticalNegativeSpaceOk(): JSX.Element {
+function VerticalNegativeSpaceOk(props: VerticalNegativeSpaceOkProps): JSX.Element {
+  const {data, fns} = useVerticalNegativeSpaceOk();
   return (
     <TypeQuest >
        <LeftSide >
@@ -161,9 +165,13 @@ function VerticalNegativeSpaceOk(): JSX.Element {
            <Temp1 >
              {`17°`}
                </Temp1>
-           <TempType >
-             {`F`}
-               </TempType>
+           {(data.isVisible) &&
+               <Tooltip arrow={true} placement={"top"}  title={kool}>
+               <TempType onClick={fns.handleClick} >
+                 {`F`}
+                   </TempType>
+             </Tooltip>
+           }
          </Temp>
        </LeftSide>
        <IconPlaceholder >
