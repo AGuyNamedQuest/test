@@ -17,7 +17,7 @@ import Q3DotsImage from './assets/images2/_3_dots.png';
 import Ellipse1Image from './assets/images2/Ellipse_1.png';
 import Ellipse2Image from './assets/images2/Ellipse_2.png';
 import { styled } from '@mui/material/styles';
-
+import useCard20 from './useCard20';
  
 const TypeQuest: any = styled("div")({  
   backgroundColor: `rgba(84, 213, 254, 1)`,  
@@ -208,6 +208,7 @@ const ButtonOutlined: any = styled(Button)({
 });
  
 function Card20(): JSX.Element {
+  const {fns} = useCard20();
   return (
     <TypeQuest >
        <Content >
@@ -237,7 +238,7 @@ function Card20(): JSX.Element {
              </Btm>
            </Frame5>
            <Frame4 >
-             <ButtonOutlined variant="outlined" size="large" color="info"    > undefined </ButtonOutlined>
+             <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
            </Frame4>
          </Details>
        </Content>
