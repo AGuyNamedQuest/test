@@ -14,7 +14,8 @@ const useCard20 = () => {
   let data: any = {};
   const PressedBtn = (): any => {};
 
-  let fns: any = {PressedBtn};
+  const ClickTest = (): any => {};
+  let fns: any = {PressedBtn, ClickTest};
   return {data, fns};
 }
 

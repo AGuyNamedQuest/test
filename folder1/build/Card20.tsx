@@ -87,6 +87,7 @@ const Title: any = styled("div")(({ theme }: any) =>({
   textTransform: `none`,  
   flexGrow: `1`,  
   margin: `0px`,  
+  cursor: `pointer`,  
 }));
   
 const Q3Dots: any = styled("img")({  
@@ -214,7 +215,7 @@ function Card20(): JSX.Element {
        <Content >
          <Details >
            <TitleTop >
-             <Title >
+             <Title onClick={fns.ClickTest} >
                {`Lorem ipsum test to be see`}
                  </Title>
              <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
