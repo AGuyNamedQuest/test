@@ -208,7 +208,7 @@ const ButtonOutlined: any = styled(Button)({
 });
  
 function Card20(): JSX.Element {
-  const {fns} = useCard20();
+  const {data, fns} = useCard20();
   return (
     <TypeQuest >
        <Content >
@@ -238,7 +238,9 @@ function Card20(): JSX.Element {
              </Btm>
            </Frame5>
            <Frame4 >
-             <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
+             {(data.isVisble) &&
+                 <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
+             }
            </Frame4>
          </Details>
        </Content>
