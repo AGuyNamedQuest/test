@@ -222,7 +222,7 @@ function Card20(): JSX.Element {
              <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
            </TitleTop>
            <Frame5 >
-             <Details1 onClick={fns.onClick2} >
+             <Details1 onClick={fns.onClick2(stuff)} >
                {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum dolar test to be seen. Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test that is only to be seen.`}
                  </Details1>
              <Btm >
