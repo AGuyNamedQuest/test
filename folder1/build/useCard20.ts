@@ -22,7 +22,8 @@ const useCard20 = () => {
   const onClick2 = (param1longername:any,  param2: any): any => {
     //commwent for onclick2
   };
-  let fns: any = {PressedBtn, ClickTest, onClick2};
+  const HelicopterMomHovering = (): any => {};
+  let fns: any = {PressedBtn, ClickTest, onClick2, HelicopterMomHovering};
   return {data, fns};
   //comment something here
 }
