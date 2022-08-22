@@ -16,7 +16,9 @@ const useCard20 = () => {
     //comment something here 2
   };
 
-  const ClickTest = (param1:any, paramGreat:any): any => {
+  const ClickTest = (
+    param1:any, paramGreat:any
+  ): any => {
     //comment for test only
   };
   const onClick2 = (
