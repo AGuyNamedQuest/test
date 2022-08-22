@@ -12,7 +12,7 @@
 *
 **********************************************************************/
 
-import { Button } from '@mui/material';
+import { Popover, Button } from '@mui/material';
 import Q3DotsImage from './assets/images2/_3_dots.png';
 import Ellipse1Image from './assets/images2/Ellipse_1.png';
 import Ellipse2Image from './assets/images2/Ellipse_2.png';
@@ -214,39 +214,51 @@ function Card20(): JSX.Element {
   const {data, fns} = useCard20();
   return (
     <TypeQuest >
-       <Content >
-         <Details >
-           <TitleTop >
-             <Title onClick={fns.ClickTest(anything2)} >
-               {`Lorem ipsum test to be see`}
-                 </Title>
-             <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
-           </TitleTop>
-           <Frame5 >
-             <Details1 onClick={fns.onClick2(stuff, stuff2)} >
-               {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum dolar test to be seen. Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test that is only to be seen.`}
-                 </Details1>
-             <Btm >
-               <Date >
-                 {`June 11, 2022`}
-                   </Date>
-               <Ellipse1  src={Ellipse1Image} alt={"Ellipse 1"}/>
-               <Events >
-                 {`15 Events`}
-                   </Events>
-               <Ellipse2  src={Ellipse2Image} alt={"Ellipse 2"}/>
-               <Participants >
-                 {`105 Participants`}
-                   </Participants>
-             </Btm>
-           </Frame5>
-           <Frame4 >
-             {(data.isVisble) &&
-                 <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
-             }
-           </Frame4>
-         </Details>
-       </Content>
+       <Popover  
+         marginThreshold={0}
+         anchorEl={props.anchorEl}
+         anchorOrigin={{vertical: 'top', horizontal: 'left'}}
+         transformOrigin={{vertical: 'top', horizontal: 'left'}}
+         keepMounted
+         transitionDuration={0}
+         open={Boolean(props.anchorEl)}
+         onClose={undefined}
+         sx = {{"& .MuiPopover-paper": {width: ""300px""}}}
+         >
+         <Content >
+           <Details >
+             <TitleTop >
+               <Title onClick={fns.ClickTest(anything2)} >
+                 {`Lorem ipsum test to be see`}
+                   </Title>
+               <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
+             </TitleTop>
+             <Frame5 >
+               <Details1 onClick={fns.onClick2(stuff, stuff2)} >
+                 {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum dolar test to be seen. Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test that is only to be seen.`}
+                   </Details1>
+               <Btm >
+                 <Date >
+                   {`June 11, 2022`}
+                     </Date>
+                 <Ellipse1  src={Ellipse1Image} alt={"Ellipse 1"}/>
+                 <Events >
+                   {`15 Events`}
+                     </Events>
+                 <Ellipse2  src={Ellipse2Image} alt={"Ellipse 2"}/>
+                 <Participants >
+                   {`105 Participants`}
+                     </Participants>
+               </Btm>
+             </Frame5>
+             <Frame4 >
+               {(data.isVisble) &&
+                   <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
+               }
+             </Frame4>
+           </Details>
+         </Content>
+       </Popover>
      </TypeQuest>
    );
 }
