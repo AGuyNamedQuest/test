@@ -16,7 +16,7 @@ const useCard20 = () => {
     //comment something here 2
   };
 
-  const ClickTest = (): any => {};
+  const ClickTest = (param1:any): any => {};
   let fns: any = {PressedBtn, ClickTest};
   return {data, fns};
   //comment something here
