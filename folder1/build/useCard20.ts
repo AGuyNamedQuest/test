@@ -19,7 +19,7 @@ const useCard20 = () => {
   const ClickTest = (param1:any): any => {
     //comment for test only
   };
-  const onClick2 = (param1longername:any): any => {
+  const onClick2 = (param1longername:any,  param2: any): any => {
     //commwent for onclick2
   };
   let fns: any = {PressedBtn, ClickTest, onClick2};
