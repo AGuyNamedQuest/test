@@ -215,7 +215,7 @@ function Card20(): JSX.Element {
        <Content >
          <Details >
            <TitleTop >
-             <Title onClick={fns.ClickTest(anything)} >
+             <Title onClick={fns.ClickTest(anything2)} >
                {`Lorem ipsum test to be see`}
                  </Title>
              <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
