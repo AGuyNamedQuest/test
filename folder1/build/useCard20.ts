@@ -12,7 +12,9 @@
 
 const useCard20 = () => {
   let data: any = {};
-  const PressedBtn = (): any => {};
+  const PressedBtn = (): any => {
+    //comment something here 2
+  };
 
   const ClickTest = (): any => {};
   let fns: any = {PressedBtn, ClickTest};
