@@ -12,7 +12,7 @@
 *
 **********************************************************************/
 
-import { Popover, Button } from '@mui/material';
+import { Button } from '@mui/material';
 import Q3DotsImage from './assets/images2/_3_dots.png';
 import Ellipse1Image from './assets/images2/Ellipse_1.png';
 import Ellipse2Image from './assets/images2/Ellipse_2.png';
@@ -45,7 +45,6 @@ const Content: any = styled("div")({
   boxSizing: `border-box`,  
   alignSelf: `stretch`,  
   margin: `0px`,  
-  width: `100%`,  
 });
   
 const Details: any = styled("div")({  
@@ -124,7 +123,6 @@ const Details1: any = styled("div")(({ theme }: any) =>({
   textTransform: theme.typography["Typography"]["Body 1"].textTransform,  
   alignSelf: `stretch`,  
   margin: `0px`,  
-  cursor: `pointer`,  
 }));
   
 const Btm: any = styled("div")({  
@@ -214,51 +212,39 @@ function Card20(): JSX.Element {
   const {data, fns} = useCard20();
   return (
     <TypeQuest >
-       <Popover  
-         marginThreshold={0}
-         anchorEl={props.anchorEl}
-         anchorOrigin={{vertical: 'top', horizontal: 'left'}}
-         transformOrigin={{vertical: 'top', horizontal: 'left'}}
-         keepMounted
-         transitionDuration={0}
-         open={Boolean(props.anchorEl)}
-         onClose={undefined}
-         sx = {{"& .MuiPopover-paper": {width: ""300px""}}}
-         >
-         <Content >
-           <Details >
-             <TitleTop >
-               <Title onClick={fns.ClickTest(anything2)} >
-                 {`Lorem ipsum test to be see`}
-                   </Title>
-               <Q3Dots onMouseOver={fns.HelicopterMomHovering}  src={Q3DotsImage} alt={"3 dots"}/>
-             </TitleTop>
-             <Frame5 >
-               <Details1 onClick={fns.onClick2(stuff, stuff2)} >
-                 {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum dolar test to be seen. Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test that is only to be seen.`}
-                   </Details1>
-               <Btm >
-                 <Date >
-                   {`June 11, 2022`}
-                     </Date>
-                 <Ellipse1  src={Ellipse1Image} alt={"Ellipse 1"}/>
-                 <Events >
-                   {`15 Events`}
-                     </Events>
-                 <Ellipse2  src={Ellipse2Image} alt={"Ellipse 2"}/>
-                 <Participants >
-                   {`105 Participants`}
-                     </Participants>
-               </Btm>
-             </Frame5>
-             <Frame4 >
-               {(data.isVisble) &&
-                   <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
-               }
-             </Frame4>
-           </Details>
-         </Content>
-       </Popover>
+       <Content >
+         <Details >
+           <TitleTop >
+             <Title onClick={fns.ClickTest(any3)} >
+               {`Lorem ipsum test to be see`}
+                 </Title>
+             <Q3Dots  src={Q3DotsImage} alt={"3 dots"}/>
+           </TitleTop>
+           <Frame5 >
+             <Details1 >
+               {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum dolar test to be seen. Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test that is only to be seen.`}
+                 </Details1>
+             <Btm >
+               <Date >
+                 {`June 11, 2022`}
+                   </Date>
+               <Ellipse1  src={Ellipse1Image} alt={"Ellipse 1"}/>
+               <Events >
+                 {`15 Events`}
+                   </Events>
+               <Ellipse2  src={Ellipse2Image} alt={"Ellipse 2"}/>
+               <Participants >
+                 {`105 Participants`}
+                   </Participants>
+             </Btm>
+           </Frame5>
+           <Frame4 >
+             {(data.isVisble) &&
+                 <ButtonOutlined variant="outlined" size="large" color="info"  onClick={fns.PressedBtn}  > undefined </ButtonOutlined>
+             }
+           </Frame4>
+         </Details>
+       </Content>
      </TypeQuest>
    );
 }
