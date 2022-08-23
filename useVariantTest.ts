@@ -13,7 +13,7 @@
 const useVariantTest = () => {
   let data: any = {};
   const somethingHere = (
-    param1:any,  param2: any,  param3: any
+    param1:any,  param2: any,  param3: any,  param4: any
   ): any => {
   //comment here
   };
