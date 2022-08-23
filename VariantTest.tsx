@@ -15,7 +15,7 @@
 import Ig21Image from './assets/images/IG2_1.png';
 import { styled } from '@mui/material/styles';
 import { VariantTestProps } from './types';
-
+import useVariantTest from './useVariantTest';
  
 const Property1Default: any = styled("div")({  
   backgroundColor: `rgba(255, 255, 255, 1)`,  
@@ -37,12 +37,14 @@ const Ig21: any = styled("img")({
   position: `absolute`,  
   left: `38px`,  
   top: `0px`,  
+  cursor: `pointer`,  
 });
  
 function VariantTest(props: VariantTestProps): JSX.Element {
+  const {fns} = useVariantTest();
   return (
     <Property1Default >
-       <Ig21  src={Ig21Image} alt={"IG2 1"}/>
+       <Ig21 onClick={fns.somethingHere}  src={Ig21Image} alt={"IG2 1"}/>
      </Property1Default>
    );
 }
