@@ -29,6 +29,7 @@ const Property1Default: any = styled("div")({
   alignItems: `flex-start`,  
   padding: `27px 19px`,  
   boxSizing: `border-box`,  
+  cursor: `pointer`,  
 });
   
 const Ig21: any = styled("img")({  
@@ -43,7 +44,7 @@ const Ig21: any = styled("img")({
 function VariantTest(props: VariantTestProps): JSX.Element {
   const {fns} = useVariantTest();
   return (
-    <Property1Default >
+    <Property1Default onClick={fns.clickingClicking} >
        <Ig21 onClick={fns.somethingHere}  src={Ig21Image} alt={"IG2 1"}/>
      </Property1Default>
    );

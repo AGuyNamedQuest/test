@@ -14,7 +14,8 @@ const useVariantTest = () => {
   let data: any = {};
   const somethingHere = (): any => {};
 
-  let fns: any = {somethingHere};
+  const clickingClicking = (): any => {};
+  let fns: any = {somethingHere, clickingClicking};
   return {data, fns};
 }
 
