@@ -13,10 +13,12 @@
 *
 **********************************************************************/
 
+
 export interface VariantTestProps {
   prop1: any;
   prop2: any;
   prop3: any;
   prop4: any;
+  prop5: any;
 };
 
