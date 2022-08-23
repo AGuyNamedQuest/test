@@ -44,7 +44,7 @@ const Ig21: any = styled("img")({
 function VariantTest(props: VariantTestProps): JSX.Element {
   const {fns} = useVariantTest();
   return (
-    <Property1Default onClick={fns.clickingClicking} >
+    <Property1Default onClick={fns.clickingClicking(any)} >
        <Ig21 onClick={fns.somethingHere}  src={Ig21Image} alt={"IG2 1"}/>
      </Property1Default>
    );
