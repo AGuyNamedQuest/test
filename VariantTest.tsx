@@ -45,7 +45,7 @@ function VariantTest(props: VariantTestProps): JSX.Element {
   const {fns} = useVariantTest();
   return (
     <Property1Default onClick={fns.clickingClicking(any)} >
-       <Ig21 onClick={fns.somethingHere(param1, parm2)}  src={Ig21Image} alt={"IG2 1"}/>
+       <Ig21 onClick={fns.somethingHere(yo, parm2, third)}  src={Ig21Image} alt={"IG2 1"}/>
      </Property1Default>
    );
 }
