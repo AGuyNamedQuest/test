@@ -14,6 +14,7 @@
 
 import Ig21Image from './assets/images/IG2_1.png';
 import { styled } from '@mui/material/styles';
+import { VariantTestProps } from './types';
 
  
 const Property1Default: any = styled("div")({  
@@ -38,7 +39,7 @@ const Ig21: any = styled("img")({
   top: `0px`,  
 });
  
-function VariantTest(): JSX.Element {
+function VariantTest(props: VariantTestProps): JSX.Element {
   return (
     <Property1Default >
        <Ig21  src={Ig21Image} alt={"IG2 1"}/>
