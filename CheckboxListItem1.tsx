@@ -14,6 +14,7 @@
 
 import { Checkbox } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { CheckboxListItem1Props } from './types';
 
  
 const HoverFalseTypeQuest: any = styled("div")(({ theme }: any) =>({  
@@ -104,7 +105,7 @@ const OptionDescriptionFor: any = styled("div")({
   margin: `0px`,  
 });
  
-function CheckboxListItem1(): JSX.Element {
+function CheckboxListItem1(props: CheckboxListItem1Props): JSX.Element {
   return (
     <HoverFalseTypeQuest >
        <LeftSide >

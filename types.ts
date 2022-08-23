@@ -23,6 +23,13 @@
 
 
 
+
+export interface CheckboxListItem1Props {
+  newProp: any;
+};
+
+
+
 export interface VariantTestProps {
   prop1: any;
   prop2: any;
