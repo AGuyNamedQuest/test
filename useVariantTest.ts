@@ -17,7 +17,8 @@ const useVariantTest = () => {
   };
 
   const clickingClicking = (param1:any): any => {};
-  let fns: any = {somethingHere, clickingClicking};
+  const onHover = (): any => {};
+  let fns: any = {somethingHere, clickingClicking, onHover};
   return {data, fns};
 }
 
