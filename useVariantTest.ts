@@ -12,7 +12,9 @@
 
 const useVariantTest = () => {
   let data: any = {};
-  const somethingHere = (): any => {};
+  const somethingHere = (): any => {
+  //comment here
+  };
 
   const clickingClicking = (): any => {};
   let fns: any = {somethingHere, clickingClicking};
