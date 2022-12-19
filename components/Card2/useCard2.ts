@@ -11,11 +11,12 @@
  **********************************************************************/
 
 const useCard2 = () => {
+  const handleButtonClickedThiagoTest3 = (): any => {};
   const handleButtonClickedThiagoTest2 = (): any => {};
   let data: any = {};
   const handleButtonClickedThiagoTest = (): any => {};
 
-  let fns: any = { handleButtonClickedThiagoTest ,handleButtonClickedThiagoTest2};
+  let fns: any = { handleButtonClickedThiagoTest ,handleButtonClickedThiagoTest2,handleButtonClickedThiagoTest3};
   return { data, fns };
 };
 
