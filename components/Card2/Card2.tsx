@@ -135,7 +135,7 @@ function Card2(props: Card2Props): JSX.Element {
           variant="contained"
           size="large"
           color="primary"
-          onClick={fns.handleButtonClickedThiagoTest4}
+          onClick={fns.handleButtonClickedThiagoTest5}
         >
           {' '}
           Large{' '}
