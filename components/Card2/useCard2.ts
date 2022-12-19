@@ -11,6 +11,7 @@
  **********************************************************************/
 
 const useCard2 = () => {
+  const handleButtonClickedThiagoTestFinal = (): any => {};
   const handleButtonClickedThiagoTest5 = (): any => {};
   const handleButtonClickedThiagoTest4 = (): any => {};
   const handleButtonClickedThiagoTest3 = (): any => {};
@@ -18,7 +19,7 @@ const useCard2 = () => {
   let data: any = {};
   const handleButtonClickedThiagoTest = (): any => {};
 
-  let fns: any = { handleButtonClickedThiagoTest ,handleButtonClickedThiagoTest2,handleButtonClickedThiagoTest3,handleButtonClickedThiagoTest4,handleButtonClickedThiagoTest5};
+  let fns: any = { handleButtonClickedThiagoTest ,handleButtonClickedThiagoTest2,handleButtonClickedThiagoTest3,handleButtonClickedThiagoTest4,handleButtonClickedThiagoTest5,handleButtonClickedThiagoTestFinal};
   return { data, fns };
 };
 
