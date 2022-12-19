@@ -15,6 +15,7 @@
 
 
 
+
 export interface Card2Props {
   className?: any;
 }
