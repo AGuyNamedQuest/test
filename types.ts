@@ -34,6 +34,7 @@
 
 
 
+
 export interface Card2Props {
   className?: any;
 }
@@ -48,9 +49,11 @@ export interface Card2Props {
 
 
 
+
 export interface CheckboxListItem1Props {
   newProp: any;
 };
+
 
 
 
