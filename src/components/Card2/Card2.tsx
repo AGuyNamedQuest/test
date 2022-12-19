@@ -13,7 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
-import { Button } from '@mui/material';
+import { Tooltip, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ImageImage from 'src/assets/imagesB/Card2_Image.png';
 import { Card2Props } from 'src/types';
@@ -35,7 +35,7 @@ const Card21: any = styled('div')({
   overflow: `hidden`,
 });
 
-const Image: any = styled('div')({
+const Image: any = styled('header')({
   backgroundImage: `url(${ImageImage})`,
   backgroundPosition: `center`,
   backgroundSize: `cover`,
@@ -117,7 +117,9 @@ const ButtonContained: any = styled(Button)({
 function Card2(props: Card2Props): JSX.Element {
   return (
     <Card21>
-      <Image></Image>
+      <Tooltip arrow={true} placement={'top'} title={'boats'}>
+        <Image id={'boatymcboatface'}></Image>
+      </Tooltip>
       <TextButton>
         <LoremIpsumTestToBeSe>
           {`Lorem ipsum test to be seen and not read for placement only. Lorem ipsum test to be seen.`}
