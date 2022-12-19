@@ -17,6 +17,7 @@ import { Tooltip, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ImageImage from 'src/assets/imagesB/Card2_Image.png';
 import { Card2Props } from 'src/types';
+import useCard2 from 'src/components/Card2/useCard2';
 
 const Card21: any = styled('div')({
   backgroundColor: `rgba(255, 255, 255, 1)`,
@@ -115,6 +116,8 @@ const ButtonContained: any = styled(Button)({
 });
 
 function Card2(props: Card2Props): JSX.Element {
+  const { fns } = useCard2();
+
   return (
     <Card21>
       <Tooltip arrow={true} placement={'top'} title={'boats'}>
@@ -129,7 +132,12 @@ function Card2(props: Card2Props): JSX.Element {
             <ButtonClicked>{`Button Clicked!`}</ButtonClicked>
           </AutoAddedFrame>
         )}
-        <ButtonContained variant="contained" size="large" color="primary">
+        <ButtonContained
+          variant="contained"
+          size="large"
+          color="primary"
+          onClick={fns.handleIt}
+        >
           {' '}
           Large{' '}
         </ButtonContained>
