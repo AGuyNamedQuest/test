@@ -120,7 +120,7 @@ function Card2(props: Card2Props): JSX.Element {
   return (
     <Card21>
       <Tooltip arrow={true} placement={'top'} title={'boats'}>
-        <Image id={'boatymcboatface'}></Image>
+        <Image id={'boatymcboatface'} aria-label={'hello'}></Image>
       </Tooltip>
       <TextButton>
         <LoremIpsumTestToBeSe>
@@ -135,7 +135,7 @@ function Card2(props: Card2Props): JSX.Element {
           variant="contained"
           size="large"
           color="primary"
-          onClick={fns.handlePleaseButtonClickeded}
+          onClick={fns.handleButtonClickeddd}
         >
           {' '}
           Large{' '}
